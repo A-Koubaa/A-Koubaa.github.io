@@ -1,4 +1,7 @@
+running = false
 function startTime() {
+    if(running == false){
+    running = true;
     let startTime = new Date().getTime();
     let fiveMinutes = 1000 * 60 * 5;
     let endTime = startTime + fiveMinutes;
@@ -26,5 +29,5 @@ function startTime() {
         }
         
 
-    }, 1000);
+    }, 1000);}
 }
